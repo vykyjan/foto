@@ -4,7 +4,7 @@ require "bundler/capistrano"
 
 set :application, "galerie"
 set :domain, '77.93.202.103'
-set :repository,  "https://github.com/vykyjan/galerie.git"
+set :repository,  "https://github.com/vykyjan/foto.git"
 set :scm,         :git
 set :user,        "root"
 set :use_sudo,    false
