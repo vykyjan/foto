@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<p>
+<h1>Galerie 	<%= @gallery.name %></h1>
+	<br>
+</p>
+
+<p> <p>
+
+</br>
+<%= link_to 'Změnit', edit_gallery_path(@gallery) %> |
+<%= link_to 'Zpět', galleries_path %> |
+<% if @gallery.at_least_one_photo? %> 
+	<%= link_to 'Photos', gallery_photos_path(@gallery) %>  |
+<% end %>
+<%= link_to 'Nahrát foto', new_gallery_photo_path(@gallery) %>

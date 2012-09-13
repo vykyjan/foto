@@ -1,0 +1,10 @@
+<h1>Galerie:	<%= @gallery.name %>, Foto: <%= @photo.photo_file %></h1>
+</br>
+<p> Ahoj<p>
+<br>
+<p id="notice"><%= notice %></p>
+
+<%= link_to image_tag(@photo.photo_file.url(:medium).to_s), gallery_photo_path(@gallery,@photo) %>
+</br>
+<%= link_to "Smazat foto", gallery_photo_path(@gallery, @photo), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %> |
+<%= link_to 'Zpět', gallery_photos_path %>
