@@ -5,7 +5,7 @@ Also see the setting in development.rb environment. New as of 3.2.3 -->
 
 <%= form_for [@gallery, @photo], :remote => true do %>
 
-	<h1>Nahrát fotky do	<%= @gallery.name %></h1>
+	<h1>Upload Gallery Photos:	<%= @gallery.name %></h1>
 	<br>
 	<p>For multiple file uploading, I used the simplest version of the Jquery-File-Upload plugin. There are no bells and whistles here. First, you'll want to browse and select your file(s), Then, after clicking "Open"...BAM! The files are uploaded. There is no submit key here (yet). Right now, it's just the  basics, folks. Also, since this is a dev app, your uploaded photo files will go in the Public folder. In real life, you'd probably store them somewhere else, perhaps using Amazon's S3 cloud file storage service.<p>
 	<br>

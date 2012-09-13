@@ -1,4 +1,3 @@
-@import "bootstrap";
 /*-----------------------  RESET ------------------------*/
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -163,7 +162,6 @@ input, button, select, textarea {
 
 a {
   text-decoration: none;
-  
 }
 *:focus {
   outline: 1;
@@ -266,8 +264,7 @@ sub {
 /*--------------------- STRUCTURE ---------------------*/
 
 #main {
-	background: white
-	;     /* #ff6200 #5e91ff  #ababed*/
+	background: #333333;     /* #ff6200 #5e91ff  #ababed*/
 /*	background: 
  	-moz-linear-gradient(top, #d9dede 0%, #efefef 40%, #efefef 60%, #d9dede 100%); */
     padding: 40px 0 200px;
@@ -409,7 +406,7 @@ h4 {
 /*--------------------- LINKS ---------------------*/
 
 a:link, a:visited {
-    color: black;
+    color: #1cb9fc;
     text-decoration: none;
 }
 a:hover {
